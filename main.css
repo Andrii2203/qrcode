@@ -4,6 +4,12 @@ body {
     color: rgb(241, 223, 23);
 }
 
+.about_me {
+    width: 100%;
+    background-color: indianred;
+    height: 100px;
+}
+
 .bio h2 {
     margin: 0;
     padding: 0;
