@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: rgb(241, 223, 23);
+}
+
+.bio h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box_right {
+    background-color: rgb(241, 223, 23);
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding: 32px;
+    margin: 16px;
+    width: 30%;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.box_right h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.photo_unnamed {
+    margin-bottom: 15px;
+}
+
+
+.box_left {
+    background-color: white;
+    color: rgb(50, 50, 161);
+    display: inline-block;
+    text-align: center;
+    padding: 32px;
+    margin: 16px;
+    width: 30%;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.box_left h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.photo_unum_blue_logo {
+    margin-bottom: 10px;
+}
