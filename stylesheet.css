@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d ;
 }
 
 body {
@@ -55,6 +55,7 @@ body {
     position: absolute;
     border-radius: 50%;
     z-index: 1;
+    transition: all 0.75s ease-out;
 }
 
 .info h1 {
@@ -106,4 +107,5 @@ button.active {
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+    transition: all 0.75s ease-out;
 }

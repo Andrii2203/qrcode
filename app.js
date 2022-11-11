@@ -7,13 +7,14 @@ const sneaker = document.querySelector('.sneaker img');
 const purchase = document.querySelector('.purchase button');
 const description = document.querySelector('.info h3');
 const sizes = document.querySelector('.sizes');
+const circle = document.querySelector('.circle')
 
 //moving animation event
 container.addEventListener('mousemove', (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
     let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
     card.style.transform = `rotateX(${yAxis}deg) rotateY(${xAxis}deg)`;
-    // card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     // card.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`;
     // card.style.transform = `rotateX(${xAxis}deg) rotateY(${yAxis}deg)`;
 
@@ -22,13 +23,14 @@ container.addEventListener('mousemove', (e) => {
 container.addEventListener('mouseenter', (e) => {
     card.style.transition = "none";
     //popout
-    title.style.transform = "translateZ(150px)";
+    title.style.transform = "translateZ(200px)";
     // title.style.transform = "translateX(150px)";
     // title.style.transform = "translateY(150px)";
     sneaker.style.transform = 'translateZ(200px) rotateZ(-45deg)';
-    description.style.transform = 'translateZ(125px)';
-    sizes.style.transform = 'translateZ(100px)';
-    purchase.style.transform = 'translateZ(100px)';
+    description.style.transform = 'translateZ(200px)';
+    sizes.style.transform = 'translateZ(200px)';
+    purchase.style.transform = 'translateZ(200px)';
+    circle.style.transform = 'translateZ(150px) rotateZ(-360deg)';
 });
 //animate out
 container.addEventListener("mouseleave", (e) => {
@@ -40,4 +42,5 @@ container.addEventListener("mouseleave", (e) => {
     description.style.transform = 'translateZ(0px)';
     sizes.style.transform = 'translateZ(0px)';
     purchase.style.transform = 'translateZ(0px)';
+    circle.style.transform = 'translateZ(0px) rotateZ(0deg)';
 });
