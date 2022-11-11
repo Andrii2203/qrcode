@@ -22,13 +22,13 @@ container.addEventListener('mousemove', (e) => {
 container.addEventListener('mouseenter', (e) => {
     card.style.transition = "none";
     //popout
-    title.style.transform = "translateZ(500px)";
+    title.style.transform = "translateZ(250px)";
     // title.style.transform = "translateX(150px)";
     // title.style.transform = "translateY(150px)";
     sneaker.style.transform = 'translateZ(200px) rotateZ(-45deg)';
-    // description.style.transform = 'translateZ(125px)';
-    // sizes.style.transform = 'translateZ(100px)';
-    // purchase.style.transform = 'translateZ(75px)';
+    description.style.transform = 'translateZ(125px)';
+    sizes.style.transform = 'translateZ(100px)';
+    purchase.style.transform = 'translateZ(75px)';
 });
 //animate out
 container.addEventListener("mouseleave", (e) => {
