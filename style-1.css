@@ -1,16 +1,4 @@
 
-.x, .y, .z {
-	position: absolute;
-}
-
-.y {
-	left: 160px;
-}
-
-.z {
-	left: 320px;
-}
-
 #container {
 	width: 300px;
 	height: 500px;
@@ -22,19 +10,8 @@
 	background-position: -100px -300px;
 }
 
-.card {
-	width: 60px;
-	height: 60px;
-	position: relative;
-	background: whitesmoke;
-	/* -webkit-transition: all 0.1s linear; */
-	float: left;
-	margin: 25px;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-/* .fullscreen {
+/* 
+.fullscreen {
 	margin: 70px 30px;
 	border: 10px solid #EFFAFF;
 	border-radius: 8px;

@@ -1,14 +1,14 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transform-style: preserve-3d ;
+    transform-style: preserve-3d;
 }
 
 body {
 	-webkit-transition: all 0.1s linear;
 	margin: 0; padding: 0;
-	/* background: url('bg.png'); */
+	background: url('bg.png');
 	font-family: sans-serif;
 	font-size: 62.5%;
 	transform-style: preserve-3d;
@@ -28,19 +28,21 @@ body {
 }
 
 .container {
-    /* width: 50%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-	/* width: 300px; */
-	/* height: 500px; */
-	/* background: url('background.jpg'); */
-	padding: 30px;
+	/* width: 300px;
+	height: 500px; */
+	background: url('banana (1).png');
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
+	/* padding: 30px; */
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	/* float: left; */
-	background-position: -100px -300px;
+	/* background-position: -100px -300px; */
 }
 
 .card {
@@ -50,6 +52,14 @@ body {
     border-radius: 30px;
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+	position: relative;
+	background: whitesmoke;
+	-webkit-transition: all 0.1s linear;
+	float: left;
+	margin: 25px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .sneaker {
@@ -91,42 +101,3 @@ body {
     font-weight: lighter;
     transition: all 0.75s ease-out;
 }
-
-/* .sizes {
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.75s ease-out;
-} */
-
-/* .sizes button {
-    padding: 0.5rem 2rem;
-    background: none;
-    border: none;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #585858;
-} */
-
-/* button.active {
-    background: #585858;
-    color: white;
-} */
-
-/* .purchase {
-    margin-top: 5rem;
-    transition: all 0.75s ease-out;
-} */
-
-/* .purchase button {
-    width: 100%;
-    padding: 1rem 0rem;
-    background: #f54642;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 30px;
-    font-weight: bolder;
-    transition: all 0.75s ease-out;
-} */
