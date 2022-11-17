@@ -7,7 +7,7 @@ const sneaker = document.querySelector('.sneaker img');
 const purchase = document.querySelector('.purchase button');
 const description = document.querySelector('.info h3');
 const sizes = document.querySelector('.sizes');
-const circle = document.querySelector('.circle')
+const circle = document.querySelector('.circle');
 
 //moving animation event
 container.addEventListener('mousemove', (e) => {
@@ -15,17 +15,13 @@ container.addEventListener('mousemove', (e) => {
     let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
     card.style.transform = `rotateX(${yAxis}deg) rotateY(${xAxis}deg)`;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    // card.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`;
-    // card.style.transform = `rotateX(${xAxis}deg) rotateY(${yAxis}deg)`;
-
 });
+
 //animate in
 container.addEventListener('mouseenter', (e) => {
     card.style.transition = "none";
     //popout
     title.style.transform = "translateZ(200px)";
-    // title.style.transform = "translateX(150px)";
-    // title.style.transform = "translateY(150px)";
     sneaker.style.transform = 'translateZ(200px) rotateZ(-45deg)';
     description.style.transform = 'translateZ(200px)';
     sizes.style.transform = 'translateZ(200px)';
@@ -44,3 +40,17 @@ container.addEventListener("mouseleave", (e) => {
     purchase.style.transform = 'translateZ(0px)';
     circle.style.transform = 'translateZ(0px) rotateZ(0deg)';
 });
+
+const X = Event.accelerationIncludingGravity.X;
+const Y = Event.accelerationIncludingGravity.Y;
+const Z= Event.accelerationIncludingGravity.Z;
+
+window.ondevicemotion = function(event) {
+    accX = Math.round(Event.accelerationIncludingGravity.X*10) / 10;
+    accY = Math.round(Event.accelerationIncludingGravity.Y*10) / 10;
+
+    movement = 10;
+
+    xA = -(accX / 10) * movement;
+    yA = -(accY / 10) * movement;
+}
