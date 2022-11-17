@@ -9,8 +9,8 @@ const circle = document.querySelector('.circle');
 
 //moving animation event
 container.addEventListener('mousemove', (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
     // card.style.transform = `rotateX(${yAxis}deg) rotateY(${xAxis}deg)`;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });

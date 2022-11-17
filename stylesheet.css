@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+	width: 50%;
 }
 
 #container {
@@ -40,7 +41,6 @@ body {
 	box-sizing: border-box;
 	float: left;
 	-moz-box-sizing: border-box;
-	overflow: hidden;
 }
 
 .card {
@@ -48,6 +48,7 @@ body {
     min-height: 80vh;
     width: 35rem;
     padding: 0rem 5rem;
+    z-index: 1;
 }
 
 .box {
@@ -59,7 +60,7 @@ body {
 	border-radius: 30px;
 	box-shadow: 0 0 50px rgba(0,0,0,0.3);
 	background: whitesmoke;
-
+    z-index: 1;
 }
 
 .sneaker {
