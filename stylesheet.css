@@ -11,7 +11,7 @@ body {
 	background: url('bg.png');
 	font-family: sans-serif;
 	font-size: 62.5%;
-	color:palevioletred;
+	color: goldenrod;
 }
 .x, .y, .z {
 	position: absolute;
@@ -25,13 +25,14 @@ body {
 	left: 320px;
 }
 
-
-
 .container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#container {
+    width: 100%;
 	background: url('banana (1).png');
 	background-repeat: repeat;
 	padding: 40px;
@@ -45,16 +46,19 @@ body {
     transform-style: preserve-3d;
     min-height: 80vh;
     width: 35rem;
-    border-radius: 30px;
     padding: 0rem 5rem;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.5), 0px 0px 50px rgba(0, 0, 0, 0.5);
-	background: whitesmoke;
+}
+
+.box {
+	position: relative;
+	background: purple;
+	-webkit-transition: all 0.1s linear;
 	float: left;
 	margin: 25px;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	-webkit-transition: all 0.1s linear;
-	position: relative;
+	border-radius: 30px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+	background: whitesmoke;
+
 }
 
 .sneaker {

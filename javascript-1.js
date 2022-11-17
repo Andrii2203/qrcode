@@ -18,8 +18,8 @@ $(document).ready(function() {
 		
 		window.ondevicemotion = function(event) {
 		  	
-		    accX = Math.round(event.accelerationIncludingGravity.x*10) / 10;  
-		    accY = Math.round(event.accelerationIncludingGravity.y*10) / 10;  
+		    accX = Math.round(event.accelerationIncludingGravity.x*200) / 10;  
+		    accY = Math.round(event.accelerationIncludingGravity.y*200) / 10;  
 		    
 		    movement = 10;
 		    
@@ -32,16 +32,14 @@ $(document).ready(function() {
 		}  
 		
 	} else {
-			
-		$('.content').show();
-		
+					
 		$('#container').addClass('fullscreen').mousemove(function(e) {
 			
 			width = $(this).width();
 			height = $(this).height();
 			
-			accX = (((e.pageX - this.offsetLeft)*2 / width) * 10) - 10;
-			accY = (((e.pageY - this.offsetTop)*2 / width) * 10) - 10;
+			accX = (((e.pageX - this.offsetLeft)*2 / width) * 200) - 10;
+			accY = (((e.pageY - this.offsetTop)*2 / width) * 200) - 10;
 			
 			xA = -(accX / 10);
 		    yA = -(accY / 10);
