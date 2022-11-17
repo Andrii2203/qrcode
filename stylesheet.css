@@ -1,75 +1,110 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d ;
+} */
 
-body {
-	-webkit-transition: all 0.1s linear;
-	margin: 0; padding: 0;
-	background: url('bg.png');
-	font-family: sans-serif;
-	font-size: 62.5%;
-}
-.x, .y, .z {
-	position: absolute;
-}
+.container {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.y {
-	left: 160px;
-}
-
-.z {
-	left: 320px;
-}
-
-#container {
-	width: 300px;
-	height: 500px;
+	/* width: 300px; */
+	/* height: 500px; */
 	background: url('background.jpg');
 	padding: 30px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	float: left;
+	/* float: left; */
 	background-position: -100px -300px;
 }
 
-.box {
-	width: 60px;
-	height: 60px;
-	position: relative;
-	background: purple;
-	-webkit-transition: all 0.1s linear;
-	float: left;
-	margin: 25px;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
-
-.content {	
-	float: left;
-	width: 500px;
-	margin: 70px 0px 70px 30px;
-	text-align: justify;
-	display: none;
-	color: #333;
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.content h1 {
-	font-size: 3em;
+.sneaker img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
 }
 
-.content p {
-	font-size: 1.5em;
-	line-height: 26px;
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
 }
 
-.fullscreen {
-	margin: 70px 30px;
-	border: 10px solid #EFFAFF;
-	border-radius: 8px;
-	box-shadow: inset 0 0 49px rgba(0, 0, 0, 0.3), 0 0 14px rgba(85, 121, 145, 0.3)
+.info h1 {
+    font-size: 2.3rem;
+    transition: all 0.75s ease-out;
 }
 
-.box:nth-of-type(1) { background: url('icons/msg.gif') 0 0 / 60px 60px; }
-.box:nth-of-type(2) { background: url('icons/date.gif') 0 0 / 60px 60px;; }
-.box:nth-of-type(3) { background: url('icons/img.gif') 0 0 / 60px 60px;; }
-.box:nth-of-type(4) { background: url('icons/note.gif') 0 0 / 60px 60px;; }
-.box:nth-of-type(5) { background: url('icons/apps.gif') 0 0 / 60px 60px;; }
-.box:nth-of-type(6) { background: url('icons/itunes.gif') 0 0 / 60px 60px;; }
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+/* .sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+} */
+
+/* .sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+} */
+
+/* button.active {
+    background: #585858;
+    color: white;
+} */
+
+/* .purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+} */
+
+/* .purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+} */

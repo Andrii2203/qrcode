@@ -29,47 +29,28 @@ body {
 	background-position: -100px -300px;
 }
 
-.box {
+.card {
 	width: 60px;
 	height: 60px;
 	position: relative;
 	background: purple;
-	-webkit-transition: all 0.1s linear;
+	/* -webkit-transition: all 0.1s linear; */
 	float: left;
 	margin: 25px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-
-.content {	
-	float: left;
-	width: 500px;
-	margin: 70px 0px 70px 30px;
-	text-align: justify;
-	display: none;
-	color: #333;
-}
-
-.content h1 {
-	font-size: 3em;
-}
-
-.content p {
-	font-size: 1.5em;
-	line-height: 26px;
-}
-
 .fullscreen {
 	margin: 70px 30px;
 	border: 10px solid #EFFAFF;
 	border-radius: 8px;
-	box-shadow: inset 0 0 49px rgba(0, 0, 0, 0.3), 0 0 14px rgba(85, 121, 145, 0.3)
+	box-shadow: inset 0 0 49px rgba(0, 0, 0, 0.3), 0 0 14px rgba(85, 121, 145, 0.3);
 }
-
+/* 
 .box:nth-of-type(1) { background: url('icons/msg.gif') 0 0 / 60px 60px; }
 .box:nth-of-type(2) { background: url('icons/date.gif') 0 0 / 60px 60px;; }
 .box:nth-of-type(3) { background: url('icons/img.gif') 0 0 / 60px 60px;; }
 .box:nth-of-type(4) { background: url('icons/note.gif') 0 0 / 60px 60px;; }
 .box:nth-of-type(5) { background: url('icons/apps.gif') 0 0 / 60px 60px;; }
-.box:nth-of-type(6) { background: url('icons/itunes.gif') 0 0 / 60px 60px;; }
+.box:nth-of-type(6) { background: url('icons/itunes.gif') 0 0 / 60px 60px;; } */
