@@ -45,7 +45,7 @@ const X = Event.accelerationIncludingGravity.X;
 const Y = Event.accelerationIncludingGravity.Y;
 const Z= Event.accelerationIncludingGravity.Z;
 
-window.ondevicemotion = function(event) {
+window.ondevicemotion = function(e) {
     accX = Math.round(Event.accelerationIncludingGravity.X*10) / 10;
     accY = Math.round(Event.accelerationIncludingGravity.Y*10) / 10;
 
@@ -53,4 +53,13 @@ window.ondevicemotion = function(event) {
 
     xA = -(accX / 10) * movement;
     yA = -(accY / 10) * movement;
+
+    $('.container').css({
+        "left" : xA+"px", "top" : yA+"px", "box-shadow" : "'+xA+'px '+yA+'px 10px rgba(0,0,0,0.3)"
+    });
+
+    bX = -(xA*2)-100;
+    bY = -(yA*2)-300;
+
+    $('.card').css({"background-position" : bX+'px '+bY+'px'});
 }
