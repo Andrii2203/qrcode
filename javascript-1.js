@@ -11,15 +11,15 @@ $(document).ready(function() {
 			height = $(window).height();
 			width = $(window).width();
 		
-			$('.container').width(width).height(height);
+			$('#container').width(width).height(height);
 			
 			
 		})();
 		
 		window.ondevicemotion = function(event) {
 		  	
-		    accX = Math.round(event.accelerationIncludingGravity.x * 25) / 10;  
-		    accY = Math.round(event.accelerationIncludingGravity.y * 25) / 10;  
+		    accX = Math.round(event.accelerationIncludingGravity.x*10) / 10;  
+		    accY = Math.round(event.accelerationIncludingGravity.y*10) / 10;  
 		    
 		    movement = 10;
 		    
@@ -32,14 +32,16 @@ $(document).ready(function() {
 		}  
 		
 	} else {
-					
-		$('.container').addClass('fullscreen').mousemove(function(e) {
+			
+		$('.content').show();
+		
+		$('#container').addClass('fullscreen').mousemove(function(e) {
 			
 			width = $(this).width();
 			height = $(this).height();
 			
-			accX = (((e.pageX - this.offsetLeft)*2 / width) * 25) - 10;
-			accY = (((e.pageY - this.offsetTop)*2 / width) * 25) - 10;
+			accX = (((e.pageX - this.offsetLeft)*2 / width) * 10) - 10;
+			accY = (((e.pageY - this.offsetTop)*2 / width) * 10) - 10;
 			
 			xA = -(accX / 10);
 		    yA = -(accY / 10);
@@ -50,20 +52,22 @@ $(document).ready(function() {
 		
 		});
 		
+		
 	}
 	
 	function run() {
 		    
-	    $('.card').css({'left' : xA+'px', 'top' : yA+'px', 'box-shadow' : ''+xA+'px '+yA+'px 10px rgba(0,0,0,0.3)'});
+	    $('.box').css({'left' : xA+'px', 'top' : yA+'px', 'box-shadow' : ''+xA+'px '+yA+'px 10px rgba(0,0,0,0.3)'});
 	    
 	    bX = -(xA*2)-100;
 	    bY = -(yA*2)-300;
 	    
-	    $('.container').css({'background-position' : bX+'px '+bY+'px'});
+	    $('#container').css({'background-position' : bX+'px '+bY+'px'});
 	
 	}
 	
 });
+
 
 //movement animation to happen
 const card = document.querySelector('.card');
