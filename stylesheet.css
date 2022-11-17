@@ -13,6 +13,7 @@ body {
 	font-size: 62.5%;
 	color: goldenrod;
 }
+
 .x, .y, .z {
 	position: absolute;
 }
@@ -35,11 +36,11 @@ body {
     width: 100%;
 	background: url('banana (1).png');
 	background-repeat: repeat;
-	padding: 40px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	float: left;
 	background-position: -100px -300px;
+	box-sizing: border-box;
+	float: left;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
 }
 
 .card {
