@@ -17,13 +17,13 @@ $(document).ready(function() {
 		
 		window.ondevicemotion = function(event) {
 		  	
-		    accX = Math.round(event.accelerationIncludingGravity.x*15) / 10;  
-		    accY = Math.round(event.accelerationIncludingGravity.y*15) / 10;  
+		    accX = Math.round(event.accelerationIncludingGravity.x*150) / 10;  
+		    accY = Math.round(event.accelerationIncludingGravity.y*150) / 10;  
 		    
 		    movement = 10;
 		    
-		    xA = -(accX / 10) * movement;
-		    yA = -(accY / 10) * movement;
+		    xA = -(accX / 1) * movement;
+		    yA = -(accY / 1) * movement;
 		    
 		    
 			run();
@@ -37,11 +37,11 @@ $(document).ready(function() {
 			width = $(this).width();
 			height = $(this).height();
 			
-			accX = (((e.pageX - this.offsetLeft)*2 / width) * 15) - 10;
-			accY = (((e.pageY - this.offsetTop)*2 / width) * 15) - 10;
+			accX = (((e.pageX - this.offsetLeft)*2 / width) * 150) - 10;
+			accY = (((e.pageY - this.offsetTop)*2 / width) * 150) - 10;
 			
-			xA = -(accX / 10);
-		    yA = -(accY / 10);
+			xA = -(accX / 1);
+		    yA = -(accY / 1);
 		    
 		    movement = 2;
 			
